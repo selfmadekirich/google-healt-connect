@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.googlehealthconnect"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -59,6 +59,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation("androidx.navigation:navigation-compose:2.8.4")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -67,5 +68,6 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    implementation("androidx.health.connect:connect-client:1.1.0-alph10")
+    implementation("androidx.health.connect:connect-client:1.1.0-alpha06")
+    implementation("com.google.accompanist:accompanist-permissions:0.20.0")
 }
